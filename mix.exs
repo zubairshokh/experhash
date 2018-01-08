@@ -14,7 +14,7 @@ defmodule ExPerHash.Mixfile do
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :cure]]
   end
 
   defp aliases do
@@ -22,7 +22,7 @@ defmodule ExPerHash.Mixfile do
   end
 
   defp deps do
-    []
+    [{:cure, "~> 0.5.0"}]
   end
 end
 
